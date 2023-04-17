@@ -42,7 +42,7 @@ module ActsAsTaggableOn
                        through: context_taggings,
                        source: :tag
 
-              attribute "#{tags_type.singularize}_list".to_sym, ActsAsTaggableOn::Taggable::TagListType.new
+              # attribute "#{tags_type.singularize}_list".to_sym, ActsAsTaggableOn::Taggable::TagListType.new
             end
 
             taggable_mixin.class_eval <<-RUBY, __FILE__, __LINE__ + 1
